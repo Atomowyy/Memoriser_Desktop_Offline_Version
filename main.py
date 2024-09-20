@@ -1,3 +1,6 @@
+import edit
+import time
+
 #Nothing important, just cosmetics
 if __name__ == '__main__':
     print("-----------------------------------------------------------------------\n"
@@ -23,10 +26,12 @@ if __name__ == '__main__':
             match user_choice:
                 case 1:
                     print('Editing mode. Work in progress...')
+                    edit.setup()
                 case 2:
                     print('Learning mode. Work in progress...')
                 case 3:
                     print('EXIT IS ALSO WORK IN PROGRESS, YOU CANT ESCAPE')
+                    time.sleep(3)
                     print('just joking')
                     break
                 case _:
